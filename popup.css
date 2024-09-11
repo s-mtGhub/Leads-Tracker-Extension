@@ -1,0 +1,98 @@
+
+body {
+    width: 300px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* li {
+    margin-bottom: 8px;
+} */
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+input {
+    width: 70%;
+    margin-right: 5px;
+    padding: 5px; /* Added padding for a better look */
+    border: 0.3px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    /* font-size: 16px; Increase font size */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+button {
+    padding: 5px 10px;
+    margin : 2px 0;
+    /* Delete Button Styling */
+    
+}
+#delete-btn,#tab-btn,#input-btn{
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    float: left;
+    margin: 3px;
+    background-color: #f8d7da; /* Light red color */
+    color: #721c24; /* Dark red text color */
+    border: 1px solid #f5c6cb; /* Light red border */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover Effect */
+#delete-btn:hover {
+    background-color: #f5c6cb; /* Darker red color on hover */
+    border-color: #f1b0b7; /* Slightly darker border on hover */
+}
+#tab-btn{
+    background-color: rgb(127, 241, 127);
+    float: right;
+}
+#input-btn{
+    width: 4rem;
+    background-color: rgb(206, 205, 205);
+    float: right;
+}
+
+#input-btn:hover {
+    background-color: rgb(227, 251, 255); /* Darker red color on hover */
+    border-color:rgb(117, 113, 150); /* Slightly darker border on hover */
+}
+#tab-btn:hover {
+    background-color: rgb(38, 245, 38); /* Darker red color on hover */
+    border-color: rgb(36, 107, 36); /* Slightly darker border on hover */
+}
+/* Delete Button Styling */
+.delete-btn {
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    position: absolute; /* Position it absolutely within the li */
+    right: 0; /*Align it to the right*/
+    /* float: right; */
+    background-color: #f0f0f0; /* Initial background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+
+/* Hover Effect */
+.delete-btn:hover {
+    background-color: #add8e6; /* Light blue color on hover */
+}
+
+/* List Item Styling */
+li {
+    position: relative; /* Make li relative to position the button */
+    padding-right: 5rem; /* Ensure there’s space for the button on the right */
+    margin-bottom: 1rem; /* Space between items */
+}
